@@ -99,3 +99,5 @@ chain :: (Integral a) => a -> [a]
 chain 1 = [1]
 chain a | odd a = a : chain (a*3+1)
         | otherwise = a : chain (div a 2)
+
+
